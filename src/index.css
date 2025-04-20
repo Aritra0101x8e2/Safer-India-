@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 100%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 196 76% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 24% 64%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 223 47% 18%;
+    --muted-foreground: 215 20% 70%;
+
+    --accent: 222 47% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 223 47% 20%;
+    --input: 223 47% 20%;
+    --ring: 196 76% 49%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cyber-background text-foreground font-sans overflow-hidden;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  .mapboxgl-canvas {
+    outline: none;
+  }
+
+  .map-overlay {
+    background-color: rgba(26, 31, 44, 0.8);
+    border: 1px solid rgba(30, 174, 219, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(30, 174, 219, 0.2);
+    backdrop-filter: blur(4px);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 8px currentColor;
+  }
+
+  .glow-border {
+    box-shadow: 0 0 15px rgba(30, 174, 219, 0.3);
+    border: 1px solid rgba(30, 174, 219, 0.5);
+  }
+
+  .risk-high {
+    @apply text-cyber-red;
+  }
+  
+  .risk-medium {
+    @apply text-cyber-orange;
+  }
+  
+  .risk-low {
+    @apply text-cyber-yellow;
+  }
+
+  .ticker-container:hover .ticker-content {
+    animation-play-state: paused;
+  }
+}
