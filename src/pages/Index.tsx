@@ -24,7 +24,7 @@ const Index = () => {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-2 md:mb-0">
             <h1 className="text-xl md:text-2xl font-bold text-white">
-              <span className="text-cyber-blue glow-text">UPI</span> Fraud Tracker
+              <span className="text-cyber-blue glow-text">UPI</span> Fraud Tracker by DarkWave CyberSecurity
             </h1>
             <p className="text-xs text-gray-400">
               Real-time visualization of fraudulent activities across India
